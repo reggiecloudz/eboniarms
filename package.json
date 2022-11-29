@@ -19,11 +19,14 @@
   "homepage": "https://github.com/reggiecloudz/eboniarms#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
     "connect-mongodb-session": "^3.1.1",
     "ejs": "^3.1.8",
     "express": "^4.18.2",
     "express-session": "^1.17.3",
-    "mongoose": "^6.7.3"
+    "mongoose": "^6.7.3",
+    "socket.io": "^4.5.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

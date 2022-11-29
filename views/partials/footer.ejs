@@ -1,0 +1,25 @@
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="/js/bs5/bootstrap.bundle.min.js"></script>
+    <script src="/js/socket.io/socket.io.min.js"></script>
+    <script>
+        const socket = io();
+
+        document.getElementById("msgForm").addEventListener("submit", (e) => {
+          e.preventDefault();
+          console.log(document.getElementById('m').value);
+          socket.emit('new-message', document.getElementById('m').value);
+          document.getElementById('m').value = '';
+
+          socket.on('response', (msg) => {
+            console.log(msg);
+          });
+
+          return false;
+        });
+    </script>
+</body>
+
+</html>
